@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- document of a list of computer books -->
+<animals 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="animals.xsd">
+   <description>
+      Yesterdays Animals
+   </description>
+   <animal name="Murray" species="cat" priority="2">
+      <symptoms>snotty nose</symptoms>
+      <treatment>Maxiclear, deworming</treatment>
+      <dateSeen>05-04-2019 13:35:00</dateSeen>
+   </animal>
+   <animal name="Tilly" species="horse" priority="1">
+      <picURL>Tilly.jpg</picURL>
+      <symptoms>Limp foot</symptoms>
+      <treatment>Cast on foot, painkillers</treatment>
+      <dateSeen>05-04-2019  14:30:00</dateSeen>
+   </animal>
+   <animal name="Ciri" species="cat" priority="1">
+      <picURL>ciri.jpg</picURL>
+      <symptoms>Sore Paws</symptoms>
+      <treatment>Overnight stay, cream on paws</treatment>
+      <dateSeen>05-04-2019  15:30:00</dateSeen>
+   </animal>
+   <animal name="luna" species="dog" priority="5">
+      <picURL>luna.jpg</picURL>
+      <symptoms>Checkup</symptoms>
+      <treatment>Vacinations given</treatment>
+      <dateSeen>05-04-2019  12:00:00</dateSeen>
+   </animal>
+   <animal name="Santas Little Helper" species="dog" priority="3">
+      <picURL>santasLittleHelper.jpg</picURL>
+      <dateSeen>05-04-2019  11:15:30</dateSeen>
+   </animal>
+</animals>

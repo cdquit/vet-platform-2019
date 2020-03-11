@@ -1,0 +1,34 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+         animals.xsd XML Schema for defining a animals
+      </xsd:documentation>
+   </xsd:annotation>
+
+   <xsd:element name="animals">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="description" type="xsd:string"
+               minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="animal" type="AnimalType"
+               minOccurs="0" maxOccurs="unbounded"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+
+   <xsd:complexType name="AnimalType">
+      <xsd:sequence>
+        <xsd:element name="picURL" type="xsd:string"
+            minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="symptoms" type="xsd:string"
+            minOccurs="0" maxOccurs="1"/>
+	<xsd:element name="treatment" type="xsd:string"
+            minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="dateSeen" type="xsd:string"
+            minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+      <xsd:attribute name="name" type="xsd:string" use="required"/>
+      <xsd:attribute name="species" type="xsd:string" use="required"/>
+      <xsd:attribute name="priority" type="xsd:positiveInteger" use="optional"/>
+   </xsd:complexType>
+</xsd:schema>
